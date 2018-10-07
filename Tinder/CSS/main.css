@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 100vh;
+    font-family: 'K2D', sans-serif;
+}
+.bigContainer{
+    background-color: #EBE1E1;
+    width: 30%;
+    height: 70%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.title{
+
+    background-color: white;;
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 1px 20px #EBE1E1;
+}
+
+.person{
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    width: 100%;
+}
+
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 100%;
+}
+
+button:hover{
+    color: red;
+}
+
+.buttons{
+    display:flex;
+    width: 40%;
+    height: 10%;
+    justify-content: space-around;
+};
