@@ -107,19 +107,21 @@ document.getElementById('list').addEventListener('click',function(){
     for(let l=0; l<localStorage.length; l++){
         list = JSON.parse(localStorage.getItem(l))
         console.log(list);
+        if (!(list.chose==='none')){
+        
         let acount = document.getElementById('acounts');
-        acount.innerHTML+=list.naam +': ' + list.chose+'<br>';
+        acount.innerHTML+=list.naam +' '+ list.voornaam +': ' + list.chose+'<br>';
         let littleBtnlike = document.createElement('button');
-        littleBtnlike.id='like'+[l];
+        let id = littleBtnlike.id='like'+[l];
         let littleBtndislike = document.createElement('button');
         littleBtndislike.id='dislike'+[l];
         littleBtnlike.innerHTML= 'like';
         littleBtndislike.innerHTML= 'dislike';
-
-    //     document.getElementById('like'+[l]).addEventListener('click',function(){
-    //         changeOpinion();
-    //         console.log('liked')
-    //     });
+    }
+        // document.getElementById(id).addEventListener('click',function(){
+        //     changeOpinion();
+        //     console.log('liked')
+        // });
        
         
     //     if(list.chose ==="liked"){
